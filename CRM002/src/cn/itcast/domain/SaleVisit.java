@@ -22,7 +22,7 @@ public class SaleVisit {
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 	 */
 	private String visit_id;
-	private String visit_interviewee;
+	/*private String visit_interviewee;*/
 	private String visit_addr;
 	private String visit_detail;
 	private Date visit_time;
@@ -40,13 +40,13 @@ public class SaleVisit {
 		this.visit_id = visit_id;
 	}
 
-	public String getVisit_interviewee() {
+	/*public String getVisit_interviewee() {
 		return visit_interviewee;
 	}
 
 	public void setVisit_interviewee(String visit_interviewee) {
 		this.visit_interviewee = visit_interviewee;
-	}
+	}*/
 
 	public String getVisit_addr() {
 		return visit_addr;

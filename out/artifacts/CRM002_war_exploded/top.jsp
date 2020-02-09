@@ -45,6 +45,9 @@ P {
 	font-family: "楷体","楷体_GB2312";
 	color:#37a009
 	}
+A{
+	text-decoration:none;
+	}
 </STYLE>
 
 <META content="MSHTML 6.00.2900.3492" name=GENERATOR>

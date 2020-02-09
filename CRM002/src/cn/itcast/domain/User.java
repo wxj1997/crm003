@@ -14,9 +14,9 @@ public class User {
 	 */
 	private Long user_id;
 	private String user_code;
-	private String user_name;
+	//private String user_name;
 	private String user_password;
-	private Character user_state;
+	//private Character user_state;
 
 	// 表达客户与拜访记录的一对多
 	private Set<SaleVisit> saleVisits = new HashSet<SaleVisit>();
@@ -45,13 +45,13 @@ public class User {
 		this.user_code = user_code;
 	}
 
-	public String getUser_name() {
+	/*public String getUser_name() {
 		return user_name;
 	}
 
 	public void setUser_name(String user_name) {
 		this.user_name = user_name;
-	}
+	}*/
 
 	public String getUser_password() {
 		return user_password;
@@ -61,17 +61,17 @@ public class User {
 		this.user_password = user_password;
 	}
 
-	public Character getUser_state() {
+	/*public Character getUser_state() {
 		return user_state;
 	}
 
 	public void setUser_state(Character user_state) {
 		this.user_state = user_state;
-	}
+	}*/
 
 	@Override
 	public String toString() {
-		return "User [user_id=" + user_id + ", user_code=" + user_code + ", user_name=" + user_name + ", user_password="
+		return "User [user_id=" + user_id + ", user_code=" + user_code + ",  user_password="
 				+ user_password + "]";
 	}
 

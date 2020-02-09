@@ -24,7 +24,7 @@ public class Customer {
 	//private String cust_source;
 	//private String cust_industry;
 	//private String cust_level;
-	private String cust_linkman;
+	/*private String cust_linkman;*/
 	private String cust_phone;
 	private String cust_mobile;
 	
@@ -72,12 +72,12 @@ public class Customer {
 	public void setCust_name(String cust_name) {
 		this.cust_name = cust_name;
 	}
-	public String getCust_linkman() {
+	/*public String getCust_linkman() {
 		return cust_linkman;
 	}
 	public void setCust_linkman(String cust_linkman) {
 		this.cust_linkman = cust_linkman;
-	}
+	}*/
 	public String getCust_phone() {
 		return cust_phone;
 	}
