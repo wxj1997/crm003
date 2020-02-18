@@ -18,10 +18,10 @@ public class BaseDict {
 	private String dict_type_code;
 	private String dict_type_name;
 	private String dict_item_name;
-	private String dict_item_code;
-	private String dict_memo;
-	private Integer dict_sort;
-	private Character dict_enable;
+	/*private String dict_item_code;*/
+	/*private String dict_memo;*/
+	/*private Integer dict_sort;*/
+	/*private Character dict_enable;*/
 	public String getDict_id() {
 		return dict_id;
 	}
@@ -46,30 +46,30 @@ public class BaseDict {
 	public void setDict_item_name(String dict_item_name) {
 		this.dict_item_name = dict_item_name;
 	}
-	public String getDict_item_code() {
+	/*public String getDict_item_code() {
 		return dict_item_code;
 	}
 	public void setDict_item_code(String dict_item_code) {
 		this.dict_item_code = dict_item_code;
-	}
-	public String getDict_memo() {
+	}*/
+	/*public String getDict_memo() {
 		return dict_memo;
 	}
 	public void setDict_memo(String dict_memo) {
 		this.dict_memo = dict_memo;
-	}
-	public Integer getDict_sort() {
+	}*/
+	/*public Integer getDict_sort() {
 		return dict_sort;
 	}
 	public void setDict_sort(Integer dict_sort) {
 		this.dict_sort = dict_sort;
-	}
-	public Character getDict_enable() {
+	}*/
+	/*public Character getDict_enable() {
 		return dict_enable;
 	}
 	public void setDict_enable(Character dict_enable) {
 		this.dict_enable = dict_enable;
-	}
+	}*/
 	@Override
 	public String toString() {
 		return dict_item_name;

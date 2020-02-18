@@ -8,7 +8,7 @@
 			<!-- generator:主键生成策略(明天讲) -->
 			<generator class="uuid"></generator>
 		</id>
-		<property name="visit_interviewee"></property>
+		<!--<property name="visit_interviewee"></property>-->
 		<property name="visit_addr"></property>
 		<property name="visit_detail"></property>
 		<property name="visit_time"></property>
