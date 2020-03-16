@@ -113,6 +113,7 @@
 													<TD>客户名称</TD>
 													<TD>客户级别</TD>
 													<TD>客户来源</TD>
+													<TD>客户行业</TD>
 													<%--<TD>联系人</TD>--%>
 													<TD>电话</TD>
 													<TD>手机</TD>
@@ -129,6 +130,11 @@
 													</TD>
 													<TD>
 													<s:property value="#cust.cust_source" />
+													</TD>
+
+													<TD>
+														<s:property
+																value="#cust.cust_industry" />
 													</TD>
 													<%--<TD>
 													<s:property value="#cust.cust_linkman" />
