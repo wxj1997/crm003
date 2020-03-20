@@ -10,9 +10,6 @@
 		<property name="dict_type_code" ></property>
 		<property name="dict_type_name" ></property>
 		<property name="dict_item_name" ></property>
-		<!--<property name="dict_item_code" ></property>-->
-		<!--<property name="dict_memo" ></property>-->
-		<!--<property name="dict_sort" ></property>
-		<property name="dict_enable" ></property>-->
+
 	</class>
 </hibernate-mapping>

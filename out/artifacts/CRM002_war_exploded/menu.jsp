@@ -151,31 +151,7 @@ A.active {
 								<TR>
 									<TD background=images/new_027.jpg height=1></TD>
 								</TR>
-								<%--<TR>
-									<TD class=mainMenu onClick="MenuDisplay('table_2');"><SPAN
-										class=span id=table_2Span>＋</SPAN> 联系人管理</TD>
-								</TR>
-								<TR>
-									<TD>
-										<TABLE id=table_2 style="DISPLAY: none" cellSpacing=0
-											cellPadding=2 width=155 align=center border=0>
-											<TBODY>
-												<TR>
-													<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath}/jsp/linkman/add.jsp"
-														target=main>－ 新增联系人</A></TD>
-												</TR>
-												<TR>
-													<TD class=menuSmall><A class=style2 href="${pageContext.request.contextPath}/LinkManAction_list"
-														target=main>－联系人列表</A></TD>
-												</TR>
-												
-											</TBODY>
-										</TABLE>
-									</TD>
-								</TR>
-								<TR>
-									<TD background=images/new_027.jpg height=1></TD>
-								</TR>--%>
+
 								<TR>
 									<TD class=mainMenu onClick="MenuDisplay('table_5');"><SPAN
 										class=span id=table_5Span>＋</SPAN> 客户拜访管理</TD>
@@ -201,34 +177,7 @@ A.active {
 								<TR>
 									<TD background=images/new_027.jpg height=1></TD>
 								</TR>
-								<%--<TR>
-									<TD class=mainMenu onClick="MenuDisplay('table_3');"><SPAN
-										class=span id=table_3Span>＋</SPAN> 综合查询</TD>
-								</TR>
-								<TR>
-									<TD>
-										<TABLE id=table_3 style="DISPLAY: none" cellSpacing=0
-											cellPadding=2 width=155 align=center border=0>
-											<TBODY>
-												<TR>
-													<TD class=menuSmall><A class=style2 href="#"
-														target=main>－ 客户信息查询</A></TD>
-												</TR>
-												<TR>
-													<TD class=menuSmall><A class=style2 href="#"
-														target=main>－ 联系人信息查询</A></TD>
-												</TR>
-												<TR>
-													<TD class=menuSmall><A class=style2 href="#"
-														target=main>－ 客户拜访记录查询</A></TD>
-												</TR>
-											</TBODY>
-										</TABLE>
-									</TD>
-								</TR>
-								<TR>
-									<TD background=images/new_027.jpg height=1></TD>
-								</TR>--%>
+
 								<TR>
 									<TD class=mainMenu onClick="MenuDisplay('table_4');"><SPAN
 										class=span id=table_4Span>＋</SPAN> 统计分析</TD>
@@ -253,34 +202,7 @@ A.active {
 										</TABLE>
 									</TD>
 								</TR>
-								<%--<TR>
-									<TD background=images/new_027.jpg height=1></TD>
-								</TR>--%>
-								<%--<TR>
-									<TD class=mainMenu onClick="MenuDisplay('table_6');"><SPAN
-										class=span id=table_6Span>＋</SPAN>系统管理</TD>
-								</TR>
-								<TR>
-									<TD>
-										<TABLE id=table_6 style="DISPLAY: none" cellSpacing=0
-											cellPadding=2 width=155 align=center border=0>
-											<TBODY>
-												<TR>
-													<TD class=menuSmall><A class=style2 href="#"
-														target=main>－角色管理</A></TD>
-												</TR>
-												<TR>
-													<TD class=menuSmall><A class=style2 href="#"
-														target=main>－用户管理</A></TD>
-												</TR>
-												<TR>
-													<TD class=menuSmall><A class=style2 href="#"
-														target=main>－数据字典</A></TD>
-												</TR>
-											</TBODY>
-										</TABLE>
-									</TD>
-								</TR>--%>
+
 							</TBODY>
 						</TABLE>
 					</TD>
@@ -291,9 +213,7 @@ A.active {
 		</TABLE>
 		<TABLE cellSpacing=0 cellPadding=0 width=210 align=center border=0>
 			<TBODY>
-				<%--<tr>
-				<td ><IMG src="images/001.png" border=0 height="300px"></td>
-				</tr>--%>
+
 				<TR>
 					<TD width=15><IMG src="images/new_010.jpg"
 									  border=0></TD>

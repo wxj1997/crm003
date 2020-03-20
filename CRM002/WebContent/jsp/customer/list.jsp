@@ -92,8 +92,7 @@
 										<input type="hidden" name="currentPage" id="currentPageInput" value="<s:property value="#pageBean.currentPage" />" />
 										<!-- 隐藏域.每页显示条数 -->
 										<input type="hidden" name="pageSize" id="pageSizeInput"       value="<s:property value="#pageBean.pageSize" />" />
-										<!-- 放置是否需要选择的标记参数 -->
-										<%--<input type="hidden" name="select"     value="<s:property value="#parameters.select" />" />--%>
+
 										<TABLE cellSpacing=0 cellPadding=2 border=0>
 											<TBODY>
 												<TR>
@@ -123,7 +122,7 @@
 													<TD>客户级别</TD>
 													<TD>客户来源</TD>
 													<TD>客户行业</TD>
-													<%--<TD>联系人</TD>--%>
+
 													<TD>电话</TD>
 													<TD>手机</TD>
 													<TD>操作</TD>
@@ -145,9 +144,7 @@
 														<s:property
 																value="#cust.cust_industry" />
 													</TD>
-													<%--<TD>
-													<s:property value="#cust.cust_linkman" />
-													</TD>--%>
+
 													<TD>
 													<s:property value="#cust.cust_phone" />
 													</TD>
@@ -159,8 +156,7 @@
 														<a href="${pageContext.request.contextPath }/CustomerAction_toEdit?cust_id=<s:property value="#cust.cust_id" />">修改</a>
 														&nbsp;&nbsp;
 														<a href="javascript:void(0)" onclick="deleteConfirm('<s:property value="#cust.cust_name" />','${pageContext.request.contextPath }/CustomerAction_delete?cust_id=<s:property value="#cust.cust_id" /> ');" >删除</a>
-														<%--<a
-																href="${pageContext.request.contextPath }/CustomerAction_delete?cust_id=<s:property value="#cust.cust_id" />">删除</a>--%>
+
 													</s:if>
 													<s:else>
 														<input type="button" value="选择" onclick="selectCustomer(<s:property value="#cust.cust_id" />,'<s:property value="#cust.cust_name" />')" />
@@ -179,7 +175,7 @@
 											<DIV
 												style="LINE-HEIGHT: 20px; HEIGHT: 20px; TEXT-ALIGN: right">
 												共[<B><s:property value="#pageBean.totalCount" /> </B>]条记录,[<B><s:property value="#pageBean.totalPage" /></B>]页
-												,每页显示 <%-- changePageSize($('#pageSizeSelect option').filter(':selected').val()) --%> 
+												,每页显示
 												<select name="pageSize" onchange="changePageSize($('#pageSizeSelect option:selected').val())" id="pageSizeSelect" >
 													<option value="3" <s:property value="#pageBean.pageSize==3?'selected':''" /> >3</option>
 													<option value="5" <s:property value="#pageBean.pageSize==5?'selected':''" /> >5</option>

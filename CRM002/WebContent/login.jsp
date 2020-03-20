@@ -68,12 +68,7 @@ style="LEFT: 0px; POSITION: absolute; TOP: 0px; BACKGROUND-COLOR: #0066ff"></DIV
                   type=password name="user_password"></TD>
                 <TD style="HEIGHT: 28px"><SPAN id=RequiredFieldValidator4 
                   style="FONT-WEIGHT: bold; VISIBILITY: hidden; COLOR: white">请输入密码</SPAN></TD></TR>
-              <%--<TR>
-                <TD style="HEIGHT: 28px">验证码：</TD>
-                <TD style="HEIGHT: 28px"><INPUT id=txtcode 
-                  style="WIDTH: 130px" name=txtcode></TD>
-                <TD style="HEIGHT: 28px">&nbsp;</TD></TR>
-              <TR>--%>
+
                 <TD style="HEIGHT: 18px" colspan="2" ><font color="red" ><s:property value="exception.message" /> </font></TD>
                 <TD style="HEIGHT: 18px"></TD></TR>
               <TR>

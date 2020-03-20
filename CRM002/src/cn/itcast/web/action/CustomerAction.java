@@ -19,13 +19,7 @@ public class CustomerAction extends ActionSupport implements ModelDriven<Custome
     private Customer customer = new Customer();
 
     private CustomerService cs;
-    // 上传的文件会自动封装到File对象
-    // 在后台提供一个与前台input type=file组件 name相同的属性
-    private File photo;
-    // 在提交键名后加上固定后缀FileName,文件名称会自动封装到属性中
-    private String photoFileName;
-    // 在提交键名后加上固定后缀ContentType,文件MIME类型会自动封装到属性中
-    private String photoContentType;
+
 
     private Integer currentPage;
     private Integer pageSize;
@@ -62,19 +56,13 @@ public class CustomerAction extends ActionSupport implements ModelDriven<Custome
     }
 
     public String add() throws Exception {
-        if (photo != null) {
-            System.out.println("文件名称:" + photoFileName);
-            System.out.println("文件类型:" + photoContentType);
-            // 将上传文件保存到指定位置
-            photo.renameTo(new File("E:/upload/haha.jpg"));
-        }
-
-        // ---------------------------------------------------------------------
-        // 1 调用Service,保存Customer对象
+        //1 调用Service,保存Customer对象
         cs.save(customer);
-        // 2 重定向到客户列表Action
+        //2 重定向到客户列表Action
         return "toList";
     }
+
+
 
     public String delete() {
         cs.delete(customer.getCust_id());
@@ -126,28 +114,6 @@ public class CustomerAction extends ActionSupport implements ModelDriven<Custome
         this.pageSize = pageSize;
     }
 
-    public File getPhoto() {
-        return photo;
-    }
 
-    public void setPhoto(File photo) {
-        this.photo = photo;
-    }
-
-    public String getPhotoContentType() {
-        return photoContentType;
-    }
-
-    public void setPhotoContentType(String photoContentType) {
-        this.photoContentType = photoContentType;
-    }
-
-    public String getPhotoFileName() {
-        return photoFileName;
-    }
-
-    public void setPhotoFileName(String photoFileName) {
-        this.photoFileName = photoFileName;
-    }
 
 }

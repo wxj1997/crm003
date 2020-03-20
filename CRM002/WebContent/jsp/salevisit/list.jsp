@@ -137,7 +137,7 @@
                                 <TD>业务员名称</TD>
                                 <TD>客户名称</TD>
                                 <TD>访问时间</TD>
-                                <%--<TD>访问人</TD>--%>
+
                                 <TD>访问地址</TD>
                                 <TD>访问详情</TD>
                                 <TD>下次访问时间</TD>
@@ -159,10 +159,7 @@
                                     <TD>
                                         <!-- 没有传递参数,显示删除和修改操作 -->
                                         <a href="${pageContext.request.contextPath }/SaleVisitAction_toEdit?visit_id=<s:property value="visit_id" />">修改</a>
-                                        <%--&nbsp;&nbsp;
-                                        <a Id="adminDelete"
-                                                href="${pageContext.request.contextPath }/SaleVisitAction_toEdit?visit_id=<s:property value="visit_id" />">删除</a>
-                                    </TD>--%>
+
                                         <a href="javascript:void(0)"
                                            onclick="deleteConfirm('<s:property value="customer.cust_name" />','${pageContext.request.contextPath }/SaleVisitAction_delete?visit_id=<s:property value="visit_id" /> ');" >删除</a>
 
@@ -181,7 +178,7 @@
 												共[<B><s:property
                                                     value="#pageBean.totalCount"/> </B>]条记录,[<B><s:property
                                                     value="#pageBean.totalPage"/></B>]页
-												,每页显示 <%-- changePageSize($('#pageSizeSelect option').filter(':selected').val()) --%> 
+												,每页显示
 												<select name="pageSize"
                                                         onchange="changePageSize($('#pageSizeSelect option:selected').val())"
                                                         id="pageSizeSelect">

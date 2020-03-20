@@ -31,11 +31,7 @@ $(document).ready(function(){
 </HEAD>
 <BODY>
 	
-	<!-- 文件上传页面3个要求:
-			1.表单必须post提交
-			2.表单提交类型enctype.必须多段式.
-			3.文件上传使用<input type="file" /> 组件
-	 -->
+
 	<FORM id=form1 name=form1
 		action="${pageContext.request.contextPath }/CustomerAction_add"
 		method="post" enctype="multipart/form-data" >
@@ -75,7 +71,7 @@ $(document).ready(function(){
 							<TR>
 								<td>客户名称：</td>
 								<td>
-								<INPUT class=textbox <%--id=sChannel2--%>
+								<INPUT class=textbox
 														style="WIDTH: 180px" maxLength=50 name="cust_name" value="<s:property value="#customer.cust_name" />">
 								</td>
 								<td>客户级别 ：</td>
@@ -84,7 +80,7 @@ $(document).ready(function(){
 							</TR>
 							
 							<TR>
-								<td>信息来源 ：</td>
+								<td>客户来源 ：</td>
 								<td id="source">
 								</td>
 								<td>客户行业：</td>
@@ -95,21 +91,16 @@ $(document).ready(function(){
 							<TR>
 								<td>固定电话 ：</td>
 								<td>
-								<INPUT class=textbox <%--id=sChannel2--%>
+								<INPUT class=textbox
 														style="WIDTH: 180px" maxLength=50 name="cust_phone" value="<s:property value="#customer.cust_phone" />">
 								</td>
 								<td>移动电话 ：</td>
 								<td>
-								<INPUT class=textbox <%--id=sChannel2--%>
+								<INPUT class=textbox
 														style="WIDTH: 180px" maxLength=50 name="cust_mobile" value="<s:property value="#customer.cust_mobile" />">
 								</td>
 							</TR>
-							<TR>
-								<td>图片上传 ：</td>
-								<td>
-									<input type="file" name="photo" />
-								</td>
-							</TR>
+
 							<tr>
 								<td rowspan=2>
 								<INPUT class=button id=sButton2 type=submit

@@ -205,6 +205,6 @@
 				</TR>
 			</TBODY>
 		</TABLE>
-	<s:debug></s:debug>
+
 </BODY>
 </HTML>

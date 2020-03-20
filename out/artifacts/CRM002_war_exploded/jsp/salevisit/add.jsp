@@ -85,12 +85,6 @@
 							</TR>
 							
 							<TR>
-								
-								<%--<td>被拜访人 ：</td>
-								<td >
-								<INPUT class=textbox id=sChannel2 type="text"
-														style="WIDTH: 180px" maxLength=50 name="visit_interviewee" value="<s:property value="#saleVisit.visit_interviewee" />" >
-								</td>--%>
 								<td>拜访地址：</td>
 								<td>
 								<INPUT class=textbox id=sChannel2
