@@ -45,15 +45,7 @@
 		<aop:pointcut expression="execution(* cn.itcast.service.impl.*ServiceImpl.*(..))" id="txPc"/>
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="txPc" />
 	</aop:config> 
-	<!-- ========================================================================================= -->
-	<!-- 开启注解事务
-	<tx:annotation-driven transaction-manager="transactionManager" />
-	 -->
-	<!-- 将SessionFactory配置到spring容器中 -->
-	<!-- 加载配置方案1:仍然使用外部的hibernate.cfg.xml配置信息 -->
-	<!-- <bean name="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" >
-		<property name="configLocation" value="classpath:hibernate.cfg.xml" ></property>
-	</bean> -->
+
 	<!-- 加载配置方案2:在spring配置中放置hibernate配置信息 -->
 	<bean name="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" >
 		<!-- 将连接池注入到sessionFactory, hibernate会通过连接池获得连接 -->
@@ -61,13 +53,8 @@
 		<!-- 配置hibernate基本信息 -->
 		<property name="hibernateProperties">
 			<props>
-				<!--  必选配置 -->
-			<!-- 	<prop key="hibernate.connection.driver_class" >com.mysql.jdbc.Driver</prop>
-				<prop key="hibernate.connection.url" >jdbc:mysql:///crm_32</prop>
-				<prop key="hibernate.connection.username" >root</prop>
-				<prop key="hibernate.connection.password" >1234</prop> -->
+
 				<prop key="hibernate.dialect" >org.hibernate.dialect.MySQLDialect</prop>
-				
 				<!--  可选配置 -->
 				<prop key="hibernate.show_sql" >true</prop>
 				<prop key="hibernate.format_sql" >true</prop>
