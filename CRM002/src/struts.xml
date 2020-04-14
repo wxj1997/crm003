@@ -12,7 +12,7 @@
 		<interceptors>
 			<!-- 注册拦截器 -->
 			<interceptor name="privilegeInterceptor"
-				class="cn.itcast.web.interceptor.PrivilegeInterceptor"></interceptor>
+				class="cn.wxj.web.interceptor.PrivilegeInterceptor"></interceptor>
 			<!-- 配置拦截器 -->
 			<interceptor-stack name="myStack">
 				<interceptor-ref name="privilegeInterceptor">

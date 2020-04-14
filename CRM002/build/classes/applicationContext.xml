@@ -42,7 +42,7 @@
 	配置切点
 	配置切面 -->
 	 <aop:config>
-		<aop:pointcut expression="execution(* cn.itcast.service.impl.*ServiceImpl.*(..))" id="txPc"/>
+		<aop:pointcut expression="execution(* cn.wxj.service.impl.*ServiceImpl.*(..))" id="txPc"/>
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="txPc" />
 	</aop:config> 
 	<!-- ========================================================================================= -->
@@ -75,56 +75,56 @@
 			</props>
 		</property>
 		<!-- 引入orm元数据,指定orm元数据所在的包路径,spring会自动读取包中的所有配置 -->
-		<property name="mappingDirectoryLocations" value="classpath:cn/itcast/domain" ></property>
+		<property name="mappingDirectoryLocations" value="classpath:cn/wxj/domain" ></property>
 	</bean>
 	
 	<!-- action -->
 	<!-- 注意:Action对象作用范围一定是多例的.这样才符合struts2架构 -->
-	<bean name="userAction" class="cn.itcast.web.action.UserAction" scope="prototype" >
+	<bean name="userAction" class="cn.wxj.web.action.UserAction" scope="prototype" >
 		<property name="userService" ref="userService" ></property>
 	</bean>
-	<bean name="customerAction" class="cn.itcast.web.action.CustomerAction" scope="prototype" >
+	<bean name="customerAction" class="cn.wxj.web.action.CustomerAction" scope="prototype" >
 		<property name="cs" ref="customerService" ></property>
 	</bean>
-	<bean name="baseDictAction" class="cn.itcast.web.action.BaseDictAction" scope="prototype" >
+	<bean name="baseDictAction" class="cn.wxj.web.action.BaseDictAction" scope="prototype" >
 		<property name="baseDictService" ref="baseDictService" ></property>
 	</bean>
-	<bean name="linkManAction" class="cn.itcast.web.action.LinkManAction" scope="prototype" >
+	<bean name="linkManAction" class="cn.wxj.web.action.LinkManAction" scope="prototype" >
 		<property name="lms" ref="linkManService" ></property>
 	</bean>
-	<bean name="saleVisitAction" class="cn.itcast.web.action.SaleVisitAction" scope="prototype" >
+	<bean name="saleVisitAction" class="cn.wxj.web.action.SaleVisitAction" scope="prototype" >
 		<property name="svs" ref="saleVisitService" ></property>
 	</bean>
 	<!-- service -->
-	<bean name="userService" class="cn.itcast.service.impl.UserServiceImpl" >
+	<bean name="userService" class="cn.wxj.service.impl.UserServiceImpl" >
 		<property name="ud" ref="userDao" ></property>
 	</bean>
-	<bean name="customerService" class="cn.itcast.service.impl.CustomerServiceImpl" >
+	<bean name="customerService" class="cn.wxj.service.impl.CustomerServiceImpl" >
 		<property name="cd" ref="customerDao" ></property>
 	</bean>
-	<bean name="baseDictService" class="cn.itcast.service.impl.BaseDictServiceImpl" >
+	<bean name="baseDictService" class="cn.wxj.service.impl.BaseDictServiceImpl" >
 		<property name="bdd" ref="baseDictDao" ></property>
 	</bean>
-	<bean name="linkManService" class="cn.itcast.service.impl.LinkManServiceImpl" >
+	<bean name="linkManService" class="cn.wxj.service.impl.LinkManServiceImpl" >
 		<property name="lmd" ref="linkManDao" ></property>
 	</bean>
-	<bean name="saleVisitService" class="cn.itcast.service.impl.SaleVisitServiceImpl" >
+	<bean name="saleVisitService" class="cn.wxj.service.impl.SaleVisitServiceImpl" >
 		<property name="svd" ref="saleVisitDao" ></property>
 	</bean>
 	<!-- dao -->
-	<bean name="userDao" class="cn.itcast.dao.impl.UserDaoImpl" >
+	<bean name="userDao" class="cn.wxj.dao.impl.UserDaoImpl" >
 		<property name="sessionFactory" ref="sessionFactory" ></property>
 	</bean>
-	<bean name="customerDao" class="cn.itcast.dao.impl.CustomerDaoImpl" >
+	<bean name="customerDao" class="cn.wxj.dao.impl.CustomerDaoImpl" >
 		<property name="sessionFactory" ref="sessionFactory" ></property>
 	</bean>
-	<bean name="baseDictDao" class="cn.itcast.dao.impl.BaseDictDaoImpl" >
+	<bean name="baseDictDao" class="cn.wxj.dao.impl.BaseDictDaoImpl" >
 		<property name="sessionFactory" ref="sessionFactory" ></property>
 	</bean>
-	<bean name="linkManDao" class="cn.itcast.dao.impl.LinkManDaoImpl" >
+	<bean name="linkManDao" class="cn.wxj.dao.impl.LinkManDaoImpl" >
 		<property name="sessionFactory" ref="sessionFactory" ></property>
 	</bean>
-	<bean name="saleVisitDao" class="cn.itcast.dao.impl.SaleVisitDaoImpl" >
+	<bean name="saleVisitDao" class="cn.wxj.dao.impl.SaleVisitDaoImpl" >
 		<property name="sessionFactory" ref="sessionFactory" ></property>
 	</bean>
 </beans>
